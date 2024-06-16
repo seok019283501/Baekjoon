@@ -4,9 +4,9 @@ class Solution {
         String answer = "";
         ArrayList<String> list = new ArrayList<>(Arrays.asList(my_string.split("")));
         
-        for(int j = 0; j < list.size(); j++){
+        for(String item : list){
             for(int i = 0; i < n; i++){
-                answer += list.get(j);
+                answer += item;
             }
         }
         return answer;
